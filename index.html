@@ -24,13 +24,10 @@
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
         }
 
-        .briyut-gradient {
-            background: linear-gradient(to right, #2dd4bf, #0ea5e9);
-        }
-
         .service-card:hover {
             transform: translateY(-5px);
             transition: all 0.3s ease;
+            background-color: #f8fafc;
         }
 
         .heart-accent {
@@ -40,10 +37,9 @@
 </head>
 <body class="watercolor-bg min-h-screen">
 
-    <!-- Header / Hero Section -->
+    <!-- Sección de Cabecera / Logo -->
     <header class="pt-10 pb-6 px-4 text-center">
         <div class="max-w-4xl mx-auto">
-            <!-- Simulación del logo con SVG inspirado en la imagen -->
             <div class="mb-6 flex justify-center">
                 <div class="relative w-32 h-32 bg-white rounded-full flex items-center justify-center border-4 border-teal-100 shadow-sm overflow-hidden p-2">
                     <div class="flex items-end space-x-1">
@@ -68,7 +64,7 @@
         
         <!-- Botones de Acción Rápida -->
         <div class="grid grid-cols-2 gap-4 mb-8">
-            <a href="https://wa.me/6461352558" class="flex flex-col items-center justify-center p-4 bg-white rounded-2xl card-shadow border border-teal-50 hover:bg-teal-50 transition-colors">
+            <a href="https://wa.me/6461352558?text=Hola%20Briyut%20Consultorios,%20me%20gustaría%20agendar%20una%20cita%20o%20recibir%20información." target="_blank" class="flex flex-col items-center justify-center p-4 bg-white rounded-2xl card-shadow border border-teal-50 hover:bg-teal-50 transition-colors">
                 <i class="fab fa-whatsapp text-3xl text-green-500 mb-2"></i>
                 <span class="text-sm font-bold">WhatsApp</span>
             </a>
@@ -78,71 +74,85 @@
             </a>
         </div>
 
-        <!-- Sección de Servicios -->
+        <!-- Sección de Servicios con Mensajes de WhatsApp -->
         <section class="space-y-4 mb-8">
             <h2 class="text-lg font-bold text-teal-900 px-2 flex items-center">
                 <i class="fas fa-hand-holding-medical mr-2 text-sky-500"></i> Nuestros Servicios
             </h2>
             
-            <!-- Servicio 1 -->
-            <div class="service-card bg-white p-5 rounded-2xl card-shadow flex items-center border-l-4 border-teal-400">
+            <!-- Consulta General -->
+            <a href="https://wa.me/6461352558?text=Hola,%20solicito%20información%20sobre%20la%20Consulta%20Médica%20General." target="_blank" class="service-card bg-white p-5 rounded-2xl card-shadow flex items-center border-l-4 border-teal-400 block">
                 <div class="mr-4 bg-teal-50 w-12 h-12 rounded-full flex items-center justify-center">
                     <i class="fas fa-user-md text-teal-600 text-xl"></i>
                 </div>
-                <div>
+                <div class="flex-grow">
                     <h3 class="font-bold text-gray-800">Consulta General</h3>
-                    <p class="text-xs text-gray-500">Atención personalizada y diagnóstico.</p>
+                    <p class="text-xs text-gray-500">Atención personalizada y diagnóstico profesional.</p>
                 </div>
-            </div>
+                <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
+            </a>
 
-            <!-- Servicio 2 -->
-            <div class="service-card bg-white p-5 rounded-2xl card-shadow flex items-center border-l-4 border-sky-400">
+            <!-- Telemedicina -->
+            <a href="https://wa.me/6461352558?text=Hola,%20me%20interesa%20saber%20más%20sobre%20las%20Especialidades%20vía%20Telemedicina." target="_blank" class="service-card bg-white p-5 rounded-2xl card-shadow flex items-center border-l-4 border-sky-400 block">
                 <div class="mr-4 bg-sky-50 w-12 h-12 rounded-full flex items-center justify-center">
                     <i class="fas fa-laptop-medical text-sky-600 text-xl"></i>
                 </div>
-                <div>
+                <div class="flex-grow">
                     <h3 class="font-bold text-gray-800">Telemedicina</h3>
-                    <p class="text-xs text-gray-500">Especialistas sin salir de casa.</p>
+                    <p class="text-xs text-gray-500">Consulta con especialistas desde tu hogar.</p>
                 </div>
-            </div>
+                <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
+            </a>
 
-            <!-- Servicio 3 -->
-            <div class="service-card bg-white p-5 rounded-2xl card-shadow flex items-center border-l-4 border-pink-300">
+            <!-- Enfermería -->
+            <a href="https://wa.me/6461352558?text=Hola,%20necesito%20información%20sobre%20los%20Cuidados%20de%20Enfermería%20a%20Domicilio." target="_blank" class="service-card bg-white p-5 rounded-2xl card-shadow flex items-center border-l-4 border-pink-300 block">
                 <div class="mr-4 bg-pink-50 w-12 h-12 rounded-full flex items-center justify-center">
                     <i class="fas fa-home text-pink-400 text-xl"></i>
                 </div>
-                <div>
+                <div class="flex-grow">
                     <h3 class="font-bold text-gray-800">Enfermería a Domicilio</h3>
-                    <p class="text-xs text-gray-500">Cuidados profesionales en tu hogar.</p>
+                    <p class="text-xs text-gray-500">Cuidados especializados en tu domicilio.</p>
                 </div>
-            </div>
+                <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
+            </a>
         </section>
 
         <!-- Ubicación -->
-        <section class="bg-white p-6 rounded-3xl card-shadow mb-8">
+        <section class="bg-white p-6 rounded-3xl card-shadow mb-8 border border-teal-50">
             <h2 class="font-bold text-teal-900 mb-4 flex items-center">
                 <i class="fas fa-map-marker-alt mr-2 text-pink-500"></i> Encuéntranos
             </h2>
             <p class="text-sm text-gray-600 leading-relaxed mb-4">
                 Estamos ubicados en: <br>
-                <span class="font-bold text-gray-800 italic">Plaza Bonita en Vicente Guerrero</span>
+                <span class="font-bold text-gray-800 italic text-base">Plaza Bonita en Vicente Guerrero</span>
             </p>
             <div class="w-full h-32 bg-teal-50 rounded-xl flex items-center justify-center border-2 border-dashed border-teal-200">
-                <span class="text-xs text-teal-400 font-medium">Atención Presencial, Digital y Domicilio</span>
+                <div class="text-center">
+                    <p class="text-xs text-teal-600 font-bold uppercase tracking-widest mb-1">Tipo de Atención</p>
+                    <p class="text-sm text-teal-800 font-medium italic">Presencial, Digital y Domicilio</p>
+                </div>
             </div>
         </section>
 
-        <!-- Redes Sociales -->
-        <div class="flex justify-center space-x-6 text-gray-400">
-            <a href="https://facebook.com" class="hover:text-blue-600 transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
-            <a href="#" class="hover:text-pink-500 transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+        <!-- Redes Sociales Actualizadas -->
+        <div class="flex justify-center space-x-8 text-gray-400">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61576409476325" target="_blank" class="hover:text-blue-600 transition-colors flex flex-col items-center">
+                <i class="fab fa-facebook-f text-3xl"></i>
+                <span class="text-[10px] mt-1 uppercase font-bold tracking-tighter">Facebook</span>
+            </a>
+            <!-- Instagram Actualizado -->
+            <a href="https://www.instagram.com/briyutconsultorios/" target="_blank" class="hover:text-pink-500 transition-colors flex flex-col items-center">
+                <i class="fab fa-instagram text-3xl"></i>
+                <span class="text-[10px] mt-1 uppercase font-bold tracking-tighter">Instagram</span>
+            </a>
         </div>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center pb-10 text-gray-400 text-xs uppercase tracking-widest">
-        &copy; 2024 Briyut Consultorios
+    <!-- Pie de página -->
+    <footer class="text-center pb-10 text-gray-400 text-[10px] uppercase tracking-widest">
+        &copy; 2024 Briyut Consultorios | San Quintín, B.C.
     </footer>
 
 </body>
